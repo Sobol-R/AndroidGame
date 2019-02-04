@@ -37,7 +37,7 @@ public class Platform extends GameObject{
     }
 
     public void render(Batch batch) {
-        sprite.setPosition(body.getPosition().x, body.getPosition().y);
+        sprite.setPosition(body.getPosition().x - width/2, body.getPosition().y - height/2);
         sprite.setSize(width, height);
         sprite.setOriginCenter();
         sprite.setRotation((float) Math.toDegrees(body.getAngle()));
